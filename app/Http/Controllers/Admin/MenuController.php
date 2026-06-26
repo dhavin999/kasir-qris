@@ -32,7 +32,7 @@ class MenuController extends Controller
             'description' => 'nullable|string',
             'price' => 'required|numeric|min:0',
             'is_available' => 'required|boolean',
-            'image' => 'nullable|image|mimes:jpeg,png,jpg,webp|max:2048',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,webp|max:5120',
         ]);
         
         $data = $request->all();
@@ -60,7 +60,7 @@ class MenuController extends Controller
             'description' => 'nullable|string',
             'price' => 'required|numeric|min:0',
             'is_available' => 'required|boolean',
-            'image' => 'nullable|image|mimes:jpeg,png,jpg,webp|max:2048',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,webp|max:5120',
         ]);
 
         $data = $request->all();
