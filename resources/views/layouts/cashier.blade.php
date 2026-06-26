@@ -37,7 +37,7 @@
     <!-- Overlay untuk Sidebar di Mobile -->
     <div id="sidebarOverlay" class="fixed inset-0 bg-slate-900/50 z-40 hidden md:hidden transition-opacity" onclick="toggleSidebar()"></div>
 
-    <div class="flex h-screen overflow-hidden">
+    <div class="flex h-[100dvh] overflow-hidden">
         
         <!-- Sidebar -->
         <div id="cashierSidebar" class="fixed inset-y-0 left-0 w-64 bg-gradient-to-b from-blue-600 to-blue-800 text-white flex flex-col shadow-[4px_0_24px_rgba(0,0,0,0.1)] z-50 transform -translate-x-full md:relative md:translate-x-0 transition-transform duration-300 ease-in-out border-r border-blue-500/30">
