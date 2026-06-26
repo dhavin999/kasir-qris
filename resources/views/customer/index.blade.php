@@ -34,7 +34,7 @@
         }
     </style>
 </head>
-<body class="text-slate-800 pb-28">
+<body class="text-slate-800 pb-28 overflow-x-hidden">
 
     <!-- Header Area -->
     <header class="glass-header sticky top-0 z-40 border-b border-slate-200/60 shadow-sm px-5 py-3">

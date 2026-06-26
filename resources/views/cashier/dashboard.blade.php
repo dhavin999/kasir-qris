@@ -96,10 +96,10 @@
     @endif
 
     <!-- Kanban Board -->
-    <div class="flex-1 p-6 grid grid-cols-1 lg:grid-cols-4 gap-6 overflow-hidden">
+    <div class="flex-1 p-6 flex lg:grid lg:grid-cols-4 gap-6 overflow-x-auto lg:overflow-hidden snap-x snap-mandatory custom-scrollbar pb-6">
         
         <!-- Column 0: Input Meja & Antrian -->
-        <div class="bg-slate-100/50 rounded-2xl border border-slate-200/60 flex flex-col h-full overflow-hidden relative">
+        <div class="bg-slate-100/50 rounded-2xl border border-slate-200/60 flex flex-col h-full overflow-hidden relative shrink-0 w-[85vw] sm:w-[350px] lg:w-auto snap-center">
             <div class="bg-white px-5 py-4 border-b border-slate-200 shadow-sm z-10">
                 <h2 class="font-bold text-slate-800 text-sm uppercase tracking-wide flex items-center">
                     <i class="fa-solid fa-chair mr-2 text-indigo-600"></i> Meja Ditempati
@@ -136,7 +136,7 @@
             </div>
         </div>
         <!-- Column 1: Pesanan Masuk (Needs Payment) -->
-        <div class="bg-slate-100/50 rounded-2xl border border-slate-200/60 flex flex-col h-full overflow-hidden relative">
+        <div class="bg-slate-100/50 rounded-2xl border border-slate-200/60 flex flex-col h-full overflow-hidden relative shrink-0 w-[85vw] sm:w-[350px] lg:w-auto snap-center">
             <div class="bg-white px-5 py-4 border-b border-slate-200 flex justify-between items-center shadow-sm z-10">
                 <div class="flex items-center space-x-3">
                     <div class="bg-amber-100 text-amber-600 p-2 rounded-lg">
@@ -217,7 +217,7 @@
         </div>
 
         <!-- Column 2: Sedang Dimasak -->
-        <div class="bg-slate-100/50 rounded-2xl border border-slate-200/60 flex flex-col h-full overflow-hidden relative">
+        <div class="bg-slate-100/50 rounded-2xl border border-slate-200/60 flex flex-col h-full overflow-hidden relative shrink-0 w-[85vw] sm:w-[350px] lg:w-auto snap-center">
             <div class="bg-white px-5 py-4 border-b border-slate-200 flex justify-between items-center shadow-sm z-10">
                 <div class="flex items-center space-x-3">
                     <div class="bg-blue-100 text-blue-600 p-2 rounded-lg">
@@ -281,7 +281,7 @@
         </div>
 
         <!-- Column 3: Siap Diantar -->
-        <div class="bg-slate-100/50 rounded-2xl border border-slate-200/60 flex flex-col h-full overflow-hidden relative">
+        <div class="bg-slate-100/50 rounded-2xl border border-slate-200/60 flex flex-col h-full overflow-hidden relative shrink-0 w-[85vw] sm:w-[350px] lg:w-auto snap-center">
             <div class="bg-white px-5 py-4 border-b border-slate-200 flex justify-between items-center shadow-sm z-10">
                 <div class="flex items-center space-x-3">
                     <div class="bg-purple-100 text-purple-600 p-2 rounded-lg">
