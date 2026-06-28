@@ -12,7 +12,7 @@
     <!-- Overlay untuk Sidebar di Mobile -->
     <div id="sidebarOverlay" class="fixed inset-0 bg-gray-900/50 z-40 hidden md:hidden transition-opacity" onclick="toggleSidebar()"></div>
 
-    <div class="flex h-[100dvh] overflow-hidden">
+    <div class="flex h-screen min-h-screen w-full overflow-hidden bg-gray-100" style="height: 100vh; height: 100dvh;">
         
         <div id="adminSidebar" class="fixed inset-y-0 left-0 w-64 shrink-0 bg-gradient-to-b from-blue-900 to-blue-800 text-white flex flex-col shadow-xl z-50 transform -translate-x-full md:relative md:translate-x-0 transition-transform duration-300 ease-in-out">
             <div class="p-6 border-b border-blue-800/50 flex justify-between items-center">
