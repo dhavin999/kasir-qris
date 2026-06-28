@@ -108,3 +108,8 @@ Route::post('/order/checkout', [CustomerOrderController::class, 'checkout'])->na
 Route::get('/order/status/{code}', [CustomerOrderController::class, 'status'])->name('customer.status');
 Route::get('/order/history', [CustomerOrderController::class, 'history'])->name('customer.history');
 
+// Route khusus untuk membersihkan cache di hosting
+Route::get('/clear-cache', function() {
+    \Illuminate\Support\Facades\Artisan::call('optimize:clear');
+    return "Cache berhasil dibersihkan";
+});
