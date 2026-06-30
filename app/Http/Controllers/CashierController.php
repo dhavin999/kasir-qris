@@ -45,7 +45,6 @@ class CashierController extends Controller
         
         $data = [
             'status' => $newStatus,
-            'is_unlock_requested' => false
         ];
 
         if ($newStatus === 'Kosong') {
@@ -137,7 +136,7 @@ class CashierController extends Controller
 
             // D. Jika pesanan diubah ke "Diproses" (sedang dimasak), otomatis kunci mejanya
             if ($newStatus === 'Diproses' && $order->table) {
-                $order->table->update(['status' => 'Terisi', 'is_unlock_requested' => false]);
+                $order->table->update(['status' => 'Terisi']);
             }
         });
 

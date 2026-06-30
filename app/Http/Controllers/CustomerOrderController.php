@@ -184,11 +184,4 @@ class CustomerOrderController extends Controller
         return view('customer.history', compact('orders', 'table'));
     }
 
-    public function requestUnlock(Request $request, $id)
-    {
-        $table = Table::findOrFail($id);
-        $table->update(['is_unlock_requested' => true]);
-        
-        return redirect()->back()->with('success_request', 'Request kesediaan meja telah dikirim. Silakan tunggu beberapa saat atau hubungi pelayan.');
-    }
 }

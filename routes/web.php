@@ -103,7 +103,7 @@ Route::middleware('auth')->group(function () {
 // RUTE PELANGGAN (Tidak perlu login / auth)
 // ---------------------------------------------------------
 Route::get('/order', [CustomerOrderController::class, 'index'])->name('customer.order');
-Route::post('/order/table/{id}/request-unlock', [CustomerOrderController::class, 'requestUnlock'])->name('customer.requestUnlock');
+
 Route::post('/order/checkout', [CustomerOrderController::class, 'checkout'])->name('customer.checkout');
 Route::get('/order/status/{code}', [CustomerOrderController::class, 'status'])->name('customer.status');
 Route::get('/order/history', [CustomerOrderController::class, 'history'])->name('customer.history');

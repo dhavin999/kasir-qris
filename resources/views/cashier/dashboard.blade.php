@@ -119,11 +119,7 @@
                     <div class="glass-panel rounded-xl p-3 border-l-4 border-l-indigo-500 flex justify-between items-center">
                         <div>
                             <p class="font-bold text-slate-800">Meja {{ $table->table_number }}</p>
-                            @if($table->is_unlock_requested)
-                                <span class="text-[10px] bg-red-100 text-red-600 px-2 py-0.5 rounded-full font-bold">Request Buka!</span>
-                            @else
-                                <span class="text-[10px] text-slate-500">Terisi</span>
-                            @endif
+                            <span class="text-[10px] text-slate-500">Terisi</span>
                         </div>
                         <i class="fa-solid fa-lock text-slate-300"></i>
                     </div>

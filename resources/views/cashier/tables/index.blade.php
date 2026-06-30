@@ -20,13 +20,9 @@
             <h3 class="font-extrabold text-slate-800 text-lg">Meja {{ $table->table_number }}</h3>
             
             <div class="mt-2 mb-4">
-                @if($table->is_unlock_requested)
-                    <span class="inline-block bg-red-100 text-red-600 px-3 py-1 rounded-full text-xs font-bold animate-pulse">Request Buka!</span>
-                @else
-                    <span class="inline-block px-3 py-1 rounded-full text-xs font-bold {{ $table->status == 'Kosong' ? 'bg-emerald-100 text-emerald-700' : 'bg-slate-200 text-slate-600' }}">
-                        {{ $table->status }}
-                    </span>
-                @endif
+                <span class="inline-block px-3 py-1 rounded-full text-xs font-bold {{ $table->status == 'Kosong' ? 'bg-emerald-100 text-emerald-700' : 'bg-slate-200 text-slate-600' }}">
+                    {{ $table->status }}
+                </span>
             </div>
 
             <form action="{{ route('kasir.tables.toggle', $table->id) }}" method="POST" class="w-full mt-auto">
@@ -36,7 +32,7 @@
                         <i class="fa-solid fa-lock mr-1"></i> Tandai Terisi
                     </button>
                 @else
-                    <button type="submit" onclick="return confirm('Kosongkan Meja {{ $table->table_number }}?')" class="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-2 rounded-xl text-xs transition shadow-md {{ $table->is_unlock_requested ? 'ring-2 ring-red-400 ring-offset-1' : '' }}">
+                    <button type="submit" onclick="return confirm('Kosongkan Meja {{ $table->table_number }}?')" class="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-2 rounded-xl text-xs transition shadow-md">
                         <i class="fa-solid fa-unlock mr-1"></i> Buka Meja
                     </button>
                 @endif
